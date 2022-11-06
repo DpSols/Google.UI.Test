@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
 
 namespace Google.UI.Test
 {
