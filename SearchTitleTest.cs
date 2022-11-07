@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.TestHost;
-
-namespace Google.UI.Test
+﻿namespace Google.UI.Test
 {
     [TestFixture]
     internal class SearchTitleTest
@@ -24,7 +22,7 @@ namespace Google.UI.Test
         public void GoogleSearch()
         {
             using ILoggerFactory loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
-            ILogger logger = loggerFactory.CreateLogger<Program>();
+            ILogger logger = loggerFactory.CreateLogger<SearchTitleTest>();
             
             _driver.Navigate().GoToUrl(Navigations._url);
             _driver.FindElement(By.ClassName(Navigations._classNameSearchQuery)).SendKeys("Hello World");
